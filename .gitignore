@@ -10,7 +10,7 @@ CMakeDoxyfile.in
 CMakeDoxygenDefaults.cmake
 cmake_install.cmake
 CTestTestfile.cmake
-Makefile
+**/Makefile
 INSTALL.md
 examples/**
 
