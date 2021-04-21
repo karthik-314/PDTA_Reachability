@@ -11,7 +11,7 @@
 git clone https://github.com/karthik-314/TPDA-Zone-Reachability.git
 
 # Build
-1. cmake ../PDTA_Reachability -DCMAKE_BUILD_TYPE=Release _DCMAKE_INSTALL_PREFIX=/usr/local
+1. cmake ../PDTA_Reachability -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
 2. make -j5
 3. make doc
 4. sudo make install (Password : root)

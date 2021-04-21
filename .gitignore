@@ -11,3 +11,6 @@ CMakeDoxygenDefaults.cmake
 cmake_install.cmake
 CTestTestfile.cmake
 Makefile
+INSTALL.md
+examples/**
+
