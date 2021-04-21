@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -pthread -O3 -DNDEBUG -DNDEBUG -O2 -flto  -rdynamic CMakeFiles/bug-007-bin.dir/bug-007.cc.o -o bug-007-bin  ../testutils/libtestutils.a ../../src/libtchecker.a 

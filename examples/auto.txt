@@ -1,0 +1,12 @@
+system:ad94_fig10
+
+event:a
+event:b
+
+process:P
+location:P:q{initial:}
+location:P:r{}
+location:P:s{}
+edge:P:q:q:a{}[push:a]
+edge:P:q:r:b{}[pop:a>=4]
+edge:P:r:s:a{}[pop:a<=3]

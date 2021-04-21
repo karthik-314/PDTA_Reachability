@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -pthread -O3 -DNDEBUG -DNDEBUG -O2 -flto  -rdynamic CMakeFiles/unittest.dir/unittest.cc.o -o unittest  ../testutils/libtestutils.a ../../src/libtchecker.a 

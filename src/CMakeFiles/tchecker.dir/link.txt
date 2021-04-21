@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -pthread -O3 -DNDEBUG -DNDEBUG -O2 -flto  -rdynamic CMakeFiles/tchecker.dir/tchecker1/tchecker.cc.o -o tchecker  libtchecker.a 

@@ -1,0 +1,46 @@
+system:ad94_fig10
+
+clock:1:x
+clock:1:y
+event:a
+event:b
+event:e1
+event:e2
+process:P
+location:P:q0{initial:}
+location:P:q11{}
+location:P:q21{}
+location:P:qp1{}
+location:P:q31{}
+location:P:q12{}
+location:P:q22{}
+location:P:qp2{}
+location:P:q32{}
+location:P:r11{}
+location:P:r21{}
+location:P:r31{}
+location:P:r41{}
+location:P:r12{}
+location:P:r22{}
+location:P:r32{}
+location:P:r42{}
+edge:P:q0:q11:e1{}[push:a11]
+edge:P:q11:q21:a{}[push:a21]
+edge:P:q21:qp1:a{do: x=0 : provided: x>=1}[]
+edge:P:qp1:q21:a{provided: y<=10}[]
+edge:P:q21:q31:b{}[push:a31]
+edge:P:q31:q0:a{}[push:a1]
+edge:P:q0:q12:e2{}[push:a12]
+edge:P:q12:q22:a{}[push:a22]
+edge:P:q22:qp2:a{do: x=0 : provided: x>=1}[]
+edge:P:qp2:q22:a{provided: y<=10}[]
+edge:P:q22:q32:b{}[push:a32]
+edge:P:q32:q0:a{}[push:a2]
+edge:P:q0:r11:a{}[pop:a1<=2]
+edge:P:r11:r21:a{}[pop:a31<=2]
+edge:P:r21:r31:a{}[pop:a21<=2]
+edge:P:r31:r41:a{}[pop:a11<=2]
+edge:P:r41:r12:a{}[pop:a2<=2]
+edge:P:r12:r22:a{}[pop:a32<=2]
+edge:P:r22:r32:a{}[pop:a22<=2]
+edge:P:r32:r42:a{}[pop:a12<=2]

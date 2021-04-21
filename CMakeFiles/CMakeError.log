@@ -1,0 +1,68 @@
+Performing C++ SOURCE FILE Test ERROR_LIMIT_IS_SUPPORTED failed with the following output:
+Change Dir: /home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1f2c/fast && /usr/bin/make  -f CMakeFiles/cmTC_c1f2c.dir/build.make CMakeFiles/cmTC_c1f2c.dir/build
+make[1]: Entering directory '/home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c1f2c.dir/src.cxx.o
+/usr/bin/c++   -Wall -pthread -DERROR_LIMIT_IS_SUPPORTED   -ferror-limit=150 -o CMakeFiles/cmTC_c1f2c.dir/src.cxx.o -c /home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-ferror-limit=150'
+CMakeFiles/cmTC_c1f2c.dir/build.make:84: recipe for target 'CMakeFiles/cmTC_c1f2c.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_c1f2c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_c1f2c/fast' failed
+make: *** [cmTC_c1f2c/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test STRICT_VTABLE_POINTERS_IS_SUPPORTED failed with the following output:
+Change Dir: /home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f3dbf/fast && /usr/bin/make  -f CMakeFiles/cmTC_f3dbf.dir/build.make CMakeFiles/cmTC_f3dbf.dir/build
+make[1]: Entering directory '/home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f3dbf.dir/src.cxx.o
+/usr/bin/c++   -Wall -pthread -DSTRICT_VTABLE_POINTERS_IS_SUPPORTED   -fstrict-vtable-pointers -o CMakeFiles/cmTC_f3dbf.dir/src.cxx.o -c /home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-fstrict-vtable-pointers'; did you mean '-fomit-frame-pointer'?
+CMakeFiles/cmTC_f3dbf.dir/build.make:84: recipe for target 'CMakeFiles/cmTC_f3dbf.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_f3dbf.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/karthik/IITB/tchecker/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_f3dbf/fast' failed
+make: *** [cmTC_f3dbf/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ERROR_LIMIT_IS_SUPPORTED failed with the following output:
+Change Dir: /home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_19948/fast && /usr/bin/make  -f CMakeFiles/cmTC_19948.dir/build.make CMakeFiles/cmTC_19948.dir/build
+make[1]: Entering directory '/home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_19948.dir/src.cxx.o
+/usr/bin/c++ -DERROR_LIMIT_IS_SUPPORTED  -Wall -pthread    -ferror-limit=150 -o CMakeFiles/cmTC_19948.dir/src.cxx.o -c /home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-ferror-limit=150'
+CMakeFiles/cmTC_19948.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_19948.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_19948.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_19948/fast' failed
+make: *** [cmTC_19948/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test STRICT_VTABLE_POINTERS_IS_SUPPORTED failed with the following output:
+Change Dir: /home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d0ad1/fast && /usr/bin/make  -f CMakeFiles/cmTC_d0ad1.dir/build.make CMakeFiles/cmTC_d0ad1.dir/build
+make[1]: Entering directory '/home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0ad1.dir/src.cxx.o
+/usr/bin/c++ -DSTRICT_VTABLE_POINTERS_IS_SUPPORTED  -Wall -pthread    -fstrict-vtable-pointers -o CMakeFiles/cmTC_d0ad1.dir/src.cxx.o -c /home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-fstrict-vtable-pointers'; did you mean '-fomit-frame-pointer'?
+CMakeFiles/cmTC_d0ad1.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_d0ad1.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d0ad1.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/karthik/IITB/MTP/tchecker/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_d0ad1/fast' failed
+make: *** [cmTC_d0ad1/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
