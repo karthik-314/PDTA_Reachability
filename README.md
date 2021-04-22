@@ -30,3 +30,6 @@ git clone https://github.com/karthik-314/TPDA-Zone-Reachability.git
 # File Format:
 1. A documented sample file format has been given in MyExamples/sample.txt
 2. The file format is similar to the TChecker file format with a few crucial differences like, no source invariants, clocks must be reset to 0 and not to any other value, and there can be only one process.
+
+# Output Format:
+The output will be of the format "[nodes, time(micro), states]", with nodes denoting the number of nodes in the entire graph, time denoting the total execution time in microseconds, and states denoting the set of states that are reachable via some well nested path in the PDTA.
