@@ -116,12 +116,10 @@ parse_options(int argc, char * argv[], char const * options, struct option const
  */
 void usage(std::string const & exec_name)
 {
-  std::cerr << "Usage: " << exec_name << " command [options] [file]" << std::endl;
-  std::cerr << "    with command:" << std::endl;
-  std::cerr << "        covreach      run covering reachability algorithm" << std::endl;
-  std::cerr << "        explore       run explore algorithm" << std::endl;
-  std::cerr << "    options are command-specific (use -h to get help on the command)" << std::endl;
-  std::cerr << "    reads from standard input if no file name is provided" << std::endl;
+  std::cerr << "Usage: " << exec_name << "[file] [graph controller]" << std::endl;
+  std::cerr << "    with [graph controller]:" << std::endl;
+  std::cerr << "        sim      Use simulation to control size of each TLM[q][Z][0]" << std::endl;
+  std::cerr << "        eq       Use equivalence to control size of each TLM[q][Z][0]" << std::endl;
 }
 
 class Clock;
