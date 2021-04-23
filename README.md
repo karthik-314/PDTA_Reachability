@@ -11,21 +11,38 @@
 git clone https://github.com/karthik-314/TPDA-Zone-Reachability.git
 
 # Build
-1. cmake ../PDTA_Reachability -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
-2. make -j5
-3. make doc
-4. sudo make install (Password : root)
+Simply run `sudo bash install.sh`, or follow the following steps.
+```
+	cmake ../Zone_Based -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+```
+```
+	make -j5
+```
+```
+	make doc
+```
+```
+	sudo make install
+```
 
 # Executing
 1. In order to execute the benchmarks simply run, 
+```
 	cd MyExamples/
+```
 2. For equivalence run,
+```
 	bash examples.sh eq
+```
 3. For simulation run,
+```
 	bash examples.sh sim
+```
 4. For running a specific example, say B2_10.txt, run
+```
 	tchecker <graph_controller> B2_10.txt
-	Where <graph_controller> can either be "sim", or "eq" denoting simulation or equivalence respectively.
+```
+	Where `<graph_controller>` can either be "sim", or "eq" denoting simulation or equivalence respectively.
 
 # File Format:
 1. A documented sample file format has been given in MyExamples/sample.txt
