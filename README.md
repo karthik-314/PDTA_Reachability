@@ -5,7 +5,7 @@
 4. bison (>= 3.0.4)
 5. The Boost library (>= 1.65.0 -- probably works with earlier versions)
 6. Doxygen (>= 1.8.15 -- probably works with earlier versions)
-7. Catch2 (>= 2.7.0)
+7. Catch2 (>= 2.7.0), clone branch v2.x and install, as version 3 is not compatible.
 
 # Clone Repo
 git clone https://github.com/karthik-314/TPDA-Zone-Reachability.git
