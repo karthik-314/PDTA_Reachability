@@ -116,7 +116,7 @@ parse_options(int argc, char * argv[], char const * options, struct option const
  */
 void usage(std::string const & exec_name)
 {
-  std::cerr << "Usage: " << exec_name << "[file] [graph controller]" << std::endl;
+  std::cerr << "Usage: " << exec_name << " -pdta [file] [graph controller]" << std::endl;
   std::cerr << "    with [graph controller]:" << std::endl;
   std::cerr << "        sim      Use simulation to control size of each TLM[q][Z][0]" << std::endl;
   std::cerr << "        eq       Use equivalence to control size of each TLM[q][Z][0]" << std::endl;
@@ -624,13 +624,21 @@ int main(int argc, char * argv[])
   tchecker::log_t log(&std::cerr);
   
   // no command: list all available commands
-  if (argc < 2) {
+  if (argc < 3 || argc > 4) {
     usage(argv[0]);
     return 0;
   }
-  
+  if (strcmp(argv[1], "-pdta") != 0){
+    usage(argv[0]);
+    return 0;
+  }
+  bool eqOrSim;
   // parse command
-  bool eqOrSim = parse_graph_controller(argv[1]);
+  if(argc == 3){
+    eqOrSim = 1;
+  } else {
+    eqOrSim = parse_graph_controller(argv[2]);
+  }
   
   // parse options
   command_line_options_map_t map;
@@ -641,7 +649,7 @@ int main(int argc, char * argv[])
   new_argv[0] = (char *)"explore";
   new_argv[1] = (char *)"-m";
   new_argv[2] = (char *)"zg:elapsed:extraLU+g";
-  new_argv[3] = argv[2];
+  new_argv[3] = (argc == 3) ? argv[2] : argv[3];  //File name
   std::tie(map, index) = parse_options(4, new_argv, tchecker::explore::options_t::getopt_long_options,
                                            tchecker::explore::options_t::getopt_long_options_long, log);
 

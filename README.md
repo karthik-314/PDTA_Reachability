@@ -8,12 +8,12 @@
 7. Catch2 (>= 2.7.0), clone branch v2.x and install, as version 3 is not compatible.
 
 # Clone Repo
-git clone https://github.com/karthik-314/TPDA-Zone-Reachability.git
+git clone https://github.com/karthik-314/PDTA_Reachability.git
 
 # Build
 Simply run `sudo bash install.sh`, or follow the following steps.
 ```
-	cmake ../Zone_Based -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+	cmake ../PDTA_Reachability -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
 ```
 ```
 	make -j5
@@ -38,11 +38,15 @@ Simply run `sudo bash install.sh`, or follow the following steps.
 ```
 	bash examples.sh sim
 ```
+By default simulation is assumed, therefore we can also run the following for simulation,
+```
+	bash examples.sh
+```
 4. For running a specific example, say B2_10.txt, run
 ```
-	tchecker <graph_controller> B2_10.txt
+	tchecker -pdta <graph_controller> B2_10.txt
 ```
-	Where `<graph_controller>` can either be "sim", or "eq" denoting simulation or equivalence respectively.
+	Where `<graph_controller>` can either be "sim", or "eq" denoting simulation or equivalence respectively. By default "sim" is used, so we can also ommit the `<graph_controller>`.
 
 # File Format:
 1. A documented sample file format has been given in MyExamples/sample.txt
