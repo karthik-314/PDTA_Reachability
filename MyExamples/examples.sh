@@ -3,10 +3,12 @@
 args=$#
 controller="sim"
 
-if [[ $args -gt 2 ]]
+if [[ $args > 0 ]]
 then
-	$controller=$1
+	controller=$1
 fi
+
+echo $controller
 
 # echo "B1"
 tchecker -pdta $controller B1.txt
