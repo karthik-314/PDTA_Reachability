@@ -1,5 +1,6 @@
 n=10
 m=100
+# This script produces B9(10,100). Change values on n and m to get B9(n,m).
 echo "system:ad94_fig10
 
 clock:1:x

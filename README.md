@@ -48,6 +48,10 @@ By default simulation is assumed, therefore we can also run the following for si
 ```
 	Where `<graph_controller>` can either be "sim", or "eq" denoting simulation or equivalence respectively. By default "sim" is used, so we can also ommit the `<graph_controller>`.
 
+## Benchmarks
+The benchmarks that are smaller can be directly verified using the corresponding automata. For larger parameterized automata, we have used scripts that are present in MyExamples/Scripts.
+For example, for B2(x), we can use the script present in B2.sh in the Scripts folder, and change the parameters. For more information refer to each script in MyExamples/Scripts.
+
 # File Format:
 1. A documented sample file format has been given in MyExamples/sample.txt
 2. The file format is similar to the TChecker file format with a few crucial differences like, no source invariants, clocks must be reset to 0 and not to any other value, and there can be only one process.

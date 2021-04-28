@@ -9,6 +9,7 @@ event:b
 process:P
 location:P:q0{initial:}
 location:P:q1{}"
+#This script produces B2(1000). Change the constants in lines 13, 19, 21, and 25 in order to make arbitrary B2(x).
 for i in {1..1001}
 do
 	echo "location:P:r$i{}"

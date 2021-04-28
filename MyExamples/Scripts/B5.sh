@@ -8,7 +8,7 @@ event:b
 
 process:P
 location:P:q0{initial:}"
-
+# This script produces B5(5000,100). Change constants in lines 12, 14, 24, 31, and 38-40, in order to make arbirtary B5(x,y).
 m=100
 
 for i in {1..5000}
