@@ -1,3 +1,8 @@
+# About the Project
+This project from the paper "Fast zone-based algorithms for reachability in pushdown timed automata", uses a Zone-Based algorithm in order to determine reachability in PDTAs. Our tool is built on the tool TChecker, and uses many operations that are present in the tool. For more details on the TChecker visit, https://www.labri.fr/perso/herbrete/tchecker/index.html.
+Given a Pushdown Timed Automata (PDTA) and an initial control-state, we compute all the control-states reachable with a well-nested run in the PDTA. A control-state q is reachable with a well-nested run in the PDTA if starting from the initial state with an empty stack we can reach the target state q with an empty stack.
+If we are only interested in reachability of a specific target state, we can improve our performance in some cases, by stopping as soon as the target state is discovered. Note that the region-based approach does this. For details regarding the algorithm please refer to the paper.
+
 # Requirements
 1. A C++ compiler with decent C++17 support (Clang >= 3.6 or GNU g++ >= 6 should work. Apple LLVM >= 10.0.0 works)
 2. CMake (>= 2.8)
